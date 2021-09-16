@@ -9,4 +9,10 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/custom", (req, res) => {
+  res.status(418).send({
+    message: "did it work???",
+  });
+});
+
 app.listen(port, () => console.log(`Example app listening on port ${port}`));
